@@ -37,6 +37,16 @@ export default function PasswordChecker() {
   const isDark = colorScheme === 'dark';
   const insets = useSafeAreaInsets();
 
+  // Add safety checks for dimensions and insets
+  const safeScreenHeight = screenHeight || 800;
+  const safeScreenWidth = screenWidth || 400;
+  const safeInsets = {
+    top: insets?.top || 0,
+    bottom: insets?.bottom || 0,
+    left: insets?.left || 0,
+    right: insets?.right || 0,
+  };
+
   const strengthData = validatePassword(password);
   const fadeAnim = useSharedValue(0);
   const scaleAnim = useSharedValue(0.8);
@@ -58,8 +68,13 @@ export default function PasswordChecker() {
 
   const handleCopyPassword = async () => {
     if (password) {
-      await Clipboard.setStringAsync(password);
-      Alert.alert('Copied!', 'Password copied to clipboard');
+      try {
+        await Clipboard.setStringAsync(password);
+        Alert.alert('Copied!', 'Password copied to clipboard');
+      } catch (error) {
+        console.log('Failed to copy to clipboard:', error);
+        Alert.alert('Error', 'Failed to copy password to clipboard');
+      }
     }
   };
 
@@ -85,9 +100,9 @@ export default function PasswordChecker() {
             contentContainerStyle={[
               styles.scrollContainer,
               { 
-                paddingTop: insets.top + 10,
-                paddingBottom: Math.max(insets.bottom + 20, 100),
-                minHeight: screenHeight - insets.top - insets.bottom,
+                paddingTop: safeInsets.top + 10,
+                paddingBottom: Math.max(safeInsets.bottom + 20, 100),
+                minHeight: safeScreenHeight - safeInsets.top - safeInsets.bottom,
               }
             ]}
             showsVerticalScrollIndicator={false}

@@ -29,7 +29,15 @@
       }
     },
     "android": {
-      "package": "com.abdul1028.PassCheck"
+      "package": "com.abdul1028.PassCheck",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
     },
     "runtimeVersion": {
       "policy": "appVersion"
