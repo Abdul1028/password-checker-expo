@@ -10,7 +10,7 @@ PassCheck is a modern password strength checker app that helps users create and 
 ---
 
 ## 📦 APK Release
-A production APK is available in the [GitHub Releases](https://github.com/your-username/pass-check/releases) section under the release named **Final release for the task App**. Download the APK to install on your Android device.
+A production APK is available in the [GitHub Releases](https://github.com/Abdul1028/password-checker-expo/releases/tag/v2_final_release) section under the release named **Final release for the task App**. Download the APK to install on your Android device.
 
 ---
 
