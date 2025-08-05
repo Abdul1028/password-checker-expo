@@ -1,4 +1,3 @@
-Scan the below code to preview on your Expo Go App
 ![PassCheck](https://github.com/user-attachments/assets/d69a824c-1eb9-4d69-8f29-ef1714139f2f)
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 8C0 3.58172 3.58172 0 8 0H504C508.418 0 512 3.58172 512 8V504C512 508.418 508.418 512 504 512H8C3.58172 512 0 508.418 0 504V8Z" fill="white"/>
