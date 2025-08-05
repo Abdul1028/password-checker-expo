@@ -17,9 +17,7 @@ A production APK is available in the [GitHub Releases](https://github.com/Abdul1
 ## 📲 Try Instantly with Expo Go
 The app is published on Expo servers! You can scan the QR code below with the Expo Go app to test PassCheck instantly:
 
-**Expo username/project:** `@pass-check.svg`
-
-![Scan with Expo Go](./pass-check.svg)
+<img src="./pass-check.svg" alt="Scan with Expo Go" width="200" height="200" style="border: 2px solid #333; border-radius: 8px; display: block; margin: 20px auto;">
 
 1. Download the [Expo Go app](https://expo.dev/client) on your phone.
 2. Open Expo Go and scan the QR code above.
